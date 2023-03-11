@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 	public class Question1 {
 		 
-		 public static void main(String[] args) {
+		 public static void main(String[] args) { // main class
 		  Scanner in = new Scanner(System.in);
 		   
 		  System.out.print("Enter first number: ");
