@@ -22,7 +22,7 @@ public class MyRegex {
 			System.out.println(regex.isValidIP("23.45.12.56"));    // true
 			System.out.println(regex.isValidIP("00.12.123.123123.123"));  // false
 			System.out.println(regex.isValidIP("122.23"));         // false
-			System.out.println(regex.isValidIP("Hello.IP")); 
+			System.out.println(regex.isValidIP("Hello.IP"));       // false
 		}
 
 	}
