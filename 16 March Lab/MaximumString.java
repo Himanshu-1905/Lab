@@ -1,4 +1,4 @@
-
+// Write a java program to find the maximum occurring character in a string.
 public class MaximumString {
 	public static void main(String[] args) {//main method
 		int max;//local variable
