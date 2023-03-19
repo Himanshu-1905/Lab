@@ -17,7 +17,7 @@ public class MyRegex {
 		    }
 		public static void main(String[] args) {
 			MyRegex regex = new MyRegex(); //main method
-			System.out.println(regex.isValidIP("000.12.12.034")); 
+			System.out.println(regex.isValidIP("000.12.12.034"));  // true
 			System.out.println(regex.isValidIP("121.234.12.12"));  // true
 			System.out.println(regex.isValidIP("23.45.12.56"));    // true
 			System.out.println(regex.isValidIP("00.12.123.123123.123"));  // false
