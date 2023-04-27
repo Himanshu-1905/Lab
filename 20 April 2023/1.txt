@@ -1,0 +1,56 @@
+CREATE TABLE CUSTOMER (
+  Cust_id VARCHAR(5),
+  Fname VARCHAR(15),
+  Lname VARCHAR(15),
+  Area CHAR(2),
+  Phone BIGINT(10),
+  DOB DATE,
+  Payment DOUBLE(6,2)
+);
+
+INSERT INTO CUSTOMER (Cust_id, Fname, Lname, Area, Phone, DOB, Payment)
+VALUES
+  ('A01', 'Ivan', 'Ross', 'SA', 6125467, '1986-01-15', 800.50),
+  ('A02', 'Vandana', 'Ray', 'MU', 5560379, '1987-12-20', 1000.75),
+  ('A03', 'Pramada', 'Jauguste', 'DA', 4560389, '1967-07-25', 500.00),
+  ('A04', 'Basu', 'Navindi', 'BA', 6125401, '1956-02-29', 860.00),
+  ('A05', 'Ravi', 'Shridhar', 'NA', NULL, '1989-02-15', 500.50),
+  ('A06', 'Rukmini', 'Aiyer', 'GH', 5125274, '1987-07-23', 1500.50);
+  
+DESC CUSTOMER;
+
+SELECT * FROM CUSTOMER;
+
+INSERT INTO CUSTOMER VALUES ('A07', 'Steve', 'Rogers', 'NY', '5551234', NOW(), 1000.00);
+
+SELECT * FROM CUSTOMER;
+
+UPDATE CUSTOMER 
+SET Phone = '7583438' 
+WHERE Cust_id IN ('A02', 'A04');
+
+UPDATE CUSTOMER
+SET DOB = '1970-01-01'
+WHERE Cust_id IN ('A03', 'A05');
+
+SELECT * FROM CUSTOMER;
+
+DELETE FROM CUSTOMER
+WHERE Cust_id IN ('A01', 'A05');
+
+DELETE FROM CUSTOMER;
+
+INSERT INTO CUSTOMER (Cust_id, Fname, Lname, Area, Phone, DOB, Payment)
+VALUES
+  ('A01', 'Luke', 'Dunphy', 'CA', '6551111', '1980-01-01', 500.00),
+  ('A02', 'Phil', 'Dunphy', 'CA', '5465222', '1985-01-01', 1000.00),
+  ('A03', 'Gloria', 'prichett', 'MH', '2553333', '1990-01-01', 1500.00),
+  ('A04', 'Chandler', 'Bing', 'NY', '5567644', '1995-01-01', 2000.00),
+  ('A05', 'Monika', 'Geller', 'NY', '5558555', '2000-01-01', 2500.00);
+
+UPDATE CUSTOMER
+SET Payment = 3000.00
+WHERE Cust_id = 'A03';
+
+DELETE FROM CUSTOMER
+WHERE Payment < 2000.00;
