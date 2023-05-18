@@ -1,0 +1,4 @@
+1) Use HTML & Css and create a form and a table displaying the name, age, address and email id of the person and an unorderes list displaying the hospital name and there should be link once we click the hospital name.
+
+2) Create a Typescript program where there is an abstract class Car with regNo and constructor to intialize the regNo and one abstract method brakingSystem and create two class Maruti and Suzuki and implement the method brakingSystem and give braking system accordingly
+3) Create an Angular ngFor and display a list of users on UI.
